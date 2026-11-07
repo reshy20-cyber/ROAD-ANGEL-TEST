@@ -1,4 +1,4 @@
-const CACHE='road-angel-v4934-official-icon';
+const CACHE='road-angel-v4937-official-icon';
 const ASSETS=['./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png','./icon-1024.png','./apple-touch-icon.png'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('road-angel-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});

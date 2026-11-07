@@ -1,7 +1,7 @@
 {
   "name": "ROAD ANGEL GLOBAL",
   "short_name": "ROAD ANGEL",
-  "start_url": "./",
+  "start_url": "./?v=4.9.37",
   "scope": "./",
   "display": "standalone",
   "background_color": "#071421",
